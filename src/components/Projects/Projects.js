@@ -9,6 +9,8 @@ import financialAnalysis from "../../Assets/Projects/financialAnalysis.png";
 import lifeActuarial from "../../Assets/Projects/lifeActuarial.png";
 import api from "../../Assets/Projects/api.png";
 import ecct from "../../Assets/Projects/ecct.png";
+import devOpsProject from "../../Assets/Projects/devops.png";
+
 
 function Projects() {
   return (
@@ -22,6 +24,17 @@ function Projects() {
           Here are a few projects I've worked on .
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={devOpsProject}
+    isBlog={false}
+    title="DevOps Project"
+    description="Designed and implemented a CI/CD pipeline for a Spring Boot application using Jenkins, Docker, and GitHub Actions. Automated build, test, and deployment processes, ensuring efficient delivery. Integrated Prometheus and Grafana for monitoring."
+    ghLink="https://github.com/Ihebcherif"
+  />
+</Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ecct}
